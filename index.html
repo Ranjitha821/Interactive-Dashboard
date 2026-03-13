@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interactive Data Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Interactive Data Dashboard</h1>
+
+<div class="container">
+
+<!-- Random User -->
+<div class="card">
+<h2>Random User Generator</h2>
+<button onclick="generateUser()">Generate User</button>
+<div id="user"></div>
+</div>
+
+<!-- Weather Search-->
+<div class="card">
+<h2>Weather Search</h2>
+
+<input type="text" id="city" placeholder="Enter city name">
+<button onclick="getWeather()">Search Weather</button>
+
+<p id="weatherResult"></p>
+</div>
+
+<!-- To Do List -->
+<div class="card">
+<h2>To-Do List</h2>
+
+<input type="text" id="task" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+
+<ul id="list"></ul>
+</div>
+
+<!-- Product Search -->
+<div class="card">
+<h2>Live Product Search</h2>
+
+<input type="text" id="search" placeholder="Search product" onkeyup="filterProducts()">
+
+<ul id="products">
+<li>Laptop</li>
+<li>Phone</li>
+<li>Headphones</li>
+<li>Keyboard</li>
+<li>Mouse</li>
+<li>Camera</li>
+<li>Smartwatch</li>
+<li>Tablet</li>
+<li>Speaker</li>
+<li>Monitor</li>
+</ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
